@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(30, 38%, 92%);
+    font-family: Montserrat, Fraunces, sans-serif;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display:flex;
+    width: 36.5em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img{
+    display: block;
+    height:27em; 
+
+}
+.card-text{
+    padding: 15px 2em;
+    font-size: 15px;
+    background-color: white;
+
+
+}
+.card-text h3{
+    font-weight:500;
+    font-size: 11px;
+    letter-spacing: .4em;
+    transform: scaleY(1);
+    color: hsl(228, 12%, 48%);
+}
+.card-text h1{
+    font-family:fraunces;
+    font-size: 33px;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+    font-weight:700;
+    font-display: swap;
+}
+.card-text p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 13px;
+    line-height:21px;
+}
+.price ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding:9px 0;
+    font-display: swap;
+}
+.price li:nth-child(1){
+    margin-right: 20px;
+    font-family: Fraunces;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+.price li:nth-child(2){
+    color: hsl(228, 12%, 48%) ;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.price button{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color:hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.price button svg{
+    padding-right: 10px;
+}
+.price button:hover{
+    background-color:hsl(158, 36%, 20%) ;
+}
+
+
+@media(max-width:920px){
+
+    #main{
+        width: 22em;
+        margin: auto;
+    }
+    .card{
+        display: grid;
+    }
+    .mobile-image img{
+        width:100%;
+        height: auto;
+        display: block;
+    }
+    .card-text{
+        line-height:20px;
+    }
+    .card h1{
+        margin:15px 0;
+    }
+    .card h3{
+        margin:px 0 0 0;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .price button{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+    .price{
+        padding-bottom: 10px;
+    }
+}
